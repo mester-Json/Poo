@@ -1,4 +1,6 @@
 <?php
+
+
 abstract class Employe
 {
     protected $matricule;
@@ -16,7 +18,7 @@ abstract class Employe
 
     public function __toString()
     {
-        return "Matricule: $this->matricule, Nom: $this->nom, Prénom: $this->prenom, Date de naissance: " . $this->dateNaissance->format('Y-m-d');
+        return "Matricule: $this->matricule, Nom: $this->nom, Prénom: $this->prenom, Date de naissance: " . $this->dateNaissance->format('d/m/Y');
 
     }
     abstract public function getSalaire();
